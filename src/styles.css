@@ -59,6 +59,7 @@
   --color-rust-light: var(--rust-light);
   --color-rust-dark: var(--rust-dark);
   --color-metal: var(--metal);
+  --color-whatsapp: var(--whatsapp);
 }
 
 :root {

@@ -48,11 +48,11 @@ export const Route = createFileRoute("/")({
         content:
           "TORALVA Trailers: fabricación de trailas, venta de refacciones y servicio de reparación. Cotiza tu remolque con especialistas confiables.",
       },
-      { property: "og:title", content: "TORALVA Trailers" },
+      { property: "og:title", content: "TORALVA Trailers | Fabricación, Refacciones y Reparación" },
       {
         property: "og:description",
         content:
-          "Trailas fabricadas para trabajar contigo. Fabricación, refacciones y reparación.",
+          "TORALVA Trailers: fabricación de trailas, venta de refacciones y servicio de reparación. Cotiza tu remolque con especialistas confiables.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

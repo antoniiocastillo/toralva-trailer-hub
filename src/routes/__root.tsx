@@ -77,13 +77,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "TORALVA Trailers" },
-      { name: "description", content: "Fabricación, refacciones y reparación de trailas." },
+      { title: "TORALVA Trailers | Fabricación, Refacciones y Reparación" },
+      { name: "description", content: "TORALVA Trailers: fabricación de trailas, venta de refacciones y servicio de reparación. Cotiza tu remolque con especialistas confiables." },
       { name: "author", content: "TORALVA Trailers" },
-      { property: "og:title", content: "TORALVA Trailers" },
-      { property: "og:description", content: "Fabricación, refacciones y reparación de trailas." },
+      { property: "og:title", content: "TORALVA Trailers | Fabricación, Refacciones y Reparación" },
+      { property: "og:description", content: "TORALVA Trailers: fabricación de trailas, venta de refacciones y servicio de reparación. Cotiza tu remolque con especialistas confiables." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "TORALVA Trailers | Fabricación, Refacciones y Reparación" },
+      { name: "twitter:description", content: "TORALVA Trailers: fabricación de trailas, venta de refacciones y servicio de reparación. Cotiza tu remolque con especialistas confiables." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/95d82db105c3687a516d676de2efd237/id-preview-8f7d32e4--d16abb2d-2596-40f8-af05-f18347236795.lovable.app-1786771601759.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/95d82db105c3687a516d676de2efd237/id-preview-8f7d32e4--d16abb2d-2596-40f8-af05-f18347236795.lovable.app-1786771601759.png" },
     ],
     links: [
       {

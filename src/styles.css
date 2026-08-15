@@ -149,6 +149,7 @@
   --rust-light: oklch(0.68 0.12 55);
   --rust-dark: oklch(0.5 0.15 40);
   --metal: oklch(0.6 0.01 240);
+  --whatsapp: oklch(0.72 0.22 145);
 }
 
 @layer base {

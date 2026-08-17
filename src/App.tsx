@@ -503,9 +503,16 @@ export default function App() {
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contactar por WhatsApp"
-        className="fixed bottom-6 right-6 z-50 grid h-14 w-14 place-items-center rounded-full bg-whatsapp text-cream shadow-lg shadow-black/20 transition-transform hover:scale-110"
+        className="fixed bottom-6 right-6 z-50 grid h-14 w-14 place-items-center rounded-full bg-whatsapp text-white shadow-lg shadow-black/30 transition-transform duration-150 ease-out hover:scale-110 active:scale-90"
       >
-        <MessageCircle className="h-7 w-7 fill-current" />
+        <span className="absolute inset-0 rounded-full bg-whatsapp opacity-75 animate-ping" />
+        <svg
+          viewBox="0 0 32 32"
+          className="relative h-7 w-7 fill-current"
+          aria-hidden="true"
+        >
+          <path d="M16.004 3C9.096 3 3.5 8.596 3.5 15.504c0 2.61.786 5.036 2.134 7.054L3.5 29l6.61-2.096a12.42 12.42 0 0 0 5.894 1.5h.005c6.908 0 12.504-5.596 12.504-12.504S22.912 3 16.004 3Zm0 22.85h-.004a10.32 10.32 0 0 1-5.264-1.442l-.378-.224-3.922 1.244 1.264-3.822-.246-.393a10.31 10.31 0 0 1-1.585-5.51c0-5.712 4.65-10.362 10.365-10.362 2.768 0 5.37 1.08 7.328 3.04a10.29 10.29 0 0 1 3.032 7.328c0 5.713-4.65 10.362-10.362 10.362Zm5.68-7.766c-.31-.156-1.84-.908-2.126-1.012-.285-.104-.492-.156-.7.156-.207.312-.802 1.012-.984 1.22-.181.208-.362.234-.673.078-.31-.156-1.31-.483-2.496-1.541-.923-.823-1.546-1.84-1.727-2.152-.181-.312-.02-.481.136-.636.14-.14.311-.364.467-.546.155-.182.207-.312.31-.52.104-.208.052-.39-.026-.546-.078-.156-.7-1.688-.96-2.312-.253-.607-.51-.525-.7-.535-.181-.008-.389-.01-.596-.01-.207 0-.545.078-.83.39-.285.312-1.09 1.064-1.09 2.596 0 1.532 1.116 3.012 1.271 3.22.156.208 2.196 3.354 5.32 4.703.743.321 1.323.513 1.775.657.746.237 1.424.203 1.96.123.598-.089 1.84-.752 2.1-1.478.259-.727.259-1.35.181-1.479-.077-.13-.284-.208-.594-.364Z" />
+        </svg>
       </a>
     </div>
   );

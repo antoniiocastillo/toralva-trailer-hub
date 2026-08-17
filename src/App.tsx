@@ -1,8 +1,6 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   Menu,
-  X,
   Truck,
   Wrench,
   Package,
@@ -39,27 +37,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 
-export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "TORALVA Trailers | Fabricación, Refacciones y Reparación" },
-      {
-        name: "description",
-        content:
-          "TORALVA Trailers: fabricación de trailas, venta de refacciones y servicio de reparación. Cotiza tu remolque con especialistas confiables.",
-      },
-      { property: "og:title", content: "TORALVA Trailers | Fabricación, Refacciones y Reparación" },
-      {
-        property: "og:description",
-        content:
-          "TORALVA Trailers: fabricación de trailas, venta de refacciones y servicio de reparación. Cotiza tu remolque con especialistas confiables.",
-      },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: Index,
-});
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
 
 const navLinks = [
   { label: "Inicio", to: "#inicio" },
@@ -80,7 +58,7 @@ const services = [
     title: "Refacciones para trailas",
     description:
       "Venta de partes de calidad: ejes, suspensiones, luces, conectores, frenos y todo lo que tu tráila necesita.",
-    },
+  },
   {
     icon: Wrench,
     title: "Reparación y mantenimiento",
@@ -97,12 +75,12 @@ const benefits = [
 ];
 
 const gallery = [
-  { src: "/images/gallery-fabrication.jpg", alt: "Fabricación de traila en taller" },
-  { src: "/images/gallery-parts.jpg", alt: "Refacciones y accesorios para trailas" },
-  { src: "/images/gallery-repair.jpg", alt: "Reparación de tráila con soldadura" },
-  { src: "/images/gallery-fleet.jpg", alt: "Flota de trailas listas para entrega" },
-  { src: "/images/gallery-axles.jpg", alt: "Ensamble de ejes y suspensión" },
-  { src: "/images/gallery-showroom.jpg", alt: "Tráila terminada en exhibición" },
+  { src: asset("images/gallery-fabrication.jpg"), alt: "Fabricación de traila en taller" },
+  { src: asset("images/gallery-parts.jpg"), alt: "Refacciones y accesorios para trailas" },
+  { src: asset("images/gallery-repair.jpg"), alt: "Reparación de tráila con soldadura" },
+  { src: asset("images/gallery-fleet.jpg"), alt: "Flota de trailas listas para entrega" },
+  { src: asset("images/gallery-axles.jpg"), alt: "Ensamble de ejes y suspensión" },
+  { src: asset("images/gallery-showroom.jpg"), alt: "Tráila terminada en exhibición" },
 ];
 
 const contactFields = [
@@ -113,7 +91,7 @@ const contactFields = [
   { icon: Clock3, label: "Horario", value: "Agregar horario", href: "#" },
 ];
 
-function Index() {
+export default function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -203,7 +181,7 @@ function Index() {
       >
         <div className="absolute inset-0">
           <img
-            src="/images/hero-trailer.jpg"
+            src={asset("images/hero-trailer.jpg")}
             alt="Tráila industrial en taller TORALVA"
             className="h-full w-full object-cover opacity-40"
             width={1920}
